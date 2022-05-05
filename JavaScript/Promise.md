@@ -10,7 +10,7 @@
 $.ajax({
     url:'http://xxxxxx/search',
     data:{
-        keywords: '海阔天空'
+        keywords: 'aaa'
     },
     success(res){   // 回调
         console.log('list', res.result.songs);
@@ -21,7 +21,7 @@ $.ajax({
             url:'http://xxxxxx/artist/desc',
             data:{id : id},
             success(res2){
-                console.log('歌手描述', res2);
+                console.log('aaa', res2);
             }
         })
     }
@@ -37,7 +37,7 @@ function render(data) {
 var p2 = new Promise( (resolve)=>{
     $.ajax({
         url:'http://xxxxxx/search',
-        data:{ keywords: '海阔天空'},
+        data:{ keywords: 'bbb'},
         success(res){
             resolve(res);
         }
@@ -51,7 +51,7 @@ p2.then( (res)=>{
             url:'http://xxxxxx/artist/desc',
             data:{id : id},
             success(res2){
-                console.log('歌手描述', res2);
+                console.log('bbb', res2);
                 resolve(res2);
             }
         })
@@ -74,7 +74,7 @@ function get_songs() {
     return new Promise( (resolve, reject)=>{
         $.ajax({
             url:'http://xxxxxx/search2',
-            data:{ keywords: '海阔天空'},
+            data:{ keywords: 'ccc'},
             success(res){
                 resolve(res);   // 成功回调
             },
