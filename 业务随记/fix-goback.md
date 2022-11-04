@@ -36,8 +36,8 @@
 
 ## 3. 适配进度&路由对应vue组件
 
-|业务层次|文件路径|结构|关联组件|完成情况|备注|
-|---|---|:---:|:---:|:---:|:---:|-----|
+|业务层次|文件路径|结构|关联组件|完成情况|其他|备注|
+|---|---|---|---|---|---|---|
 |翻译库-语种库|`./views/translation/languageLibrary`|仿路由|0|Y|
 |翻译库-互译库|`./views/translation/translationHistory` `./views/translation/translationLibrary`|锁链|1|Y||
 |翻译库-拍照翻译库|`./views/translation/pictureHistory` `./views/translation/pictureTranslation`|锁链|1|Y|
